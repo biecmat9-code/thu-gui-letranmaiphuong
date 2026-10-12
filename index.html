@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư gửi Mai Phương</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #121826;
+            color: #e2e8f0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Sakura Falling Effect */
+        .sakura-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .petal {
+            position: absolute;
+            background: #ffb7c5;
+            border-radius: 150% 0 150% 0;
+            opacity: 0.7;
+            pointer-events: none;
+            animation: fall linear infinite, sway ease-in-out infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                top: -10%;
+            }
+            100% {
+                top: 105%;
+            }
+        }
+
+        @keyframes sway {
+            0% {
+                transform: translateX(0) rotate(0deg);
+            }
+            50% {
+                transform: translateX(50px) rotate(180deg);
+            }
+            100% {
+                transform: translateX(0) rotate(360deg);
+            }
+        }
+
+        .letter-container {
+            max-width: 680px;
+            width: 100%;
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+            position: relative;
+            z-index: 2;
+        }
+
+        .letter-content p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            white-space: pre-line;
+            text-align: justify;
+        }
+
+        .highlight-text {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        .footer-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+        }
+
+        @media (max-width: 600px) {
+            .letter-container {
+                padding: 25px 20px;
+            }
+            .letter-content p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Khung cánh hoa anh đào rơi -->
+    <div class="sakura-container" id="sakuraContainer"></div>
+
+    <div class="letter-container">
+        <div class="letter-content">
+            <p>Cảnh báo sẽ rất dài, không đọc hết thì hôm sau đọc tiếp</p>
+
+            <p>Không phải là t bắt chước bạn An m đâu nhé</p>
+
+            <p>Hello cháu, khá buồn cười là lần nào t tặng quà m hay gì thì cũng là quà + cái gì đấy dạng như thư (dù m từng nói là m không thích được viết thư lắm). Nhưng biết sao được, t cũng không nghĩ ra được món quà nào ý nghĩa hơn, hoặc nếu có thì t không đủ tiền :)).</p>
+
+            <p>Nói sao nhỉ, có thể nói m là người biết nhiều về t nhất, gần như bất kì chuyện gì t không nói với người ngoài thì m đều biết cả. Nhưng có một chuyện mà t đã nói với rất rất nhiều người r nhưng t chưa từng kể với m.</p>
+
+            <p class="highlight-text">Đấy là câu chuyện về m.</p>
+
+            <p>Nên nhân dịp LTMP sắp Nam tiến, t sẽ nói cho m biết t thật sự nghĩ gì về m.</p>
+
+            <p>Có thể m đã biết (và không biết), m là người đầu tiên mà t thích. Không phải chỉ là ở cấp 2, mà literally là người đầu tiên^^. Và m cũng là người mà t dành tcam lâu nhất. 
+Nhưng yên tâm đây sẽ không phải là một lá thư kiểu tỏ tình could u give me a chance blah blah j cả, vì t sẽ không bao giờ làm thế, và hiện tại thì t cũng không còn tcam gì với m nữa cả, vậy nên yên tâm là t chỉ coi m là 1 người bạn thân thôi nhé =).</p>
+
+            <p>Nhưng t cũng muốn kể cho m một chút về một người đặc biệt đã xuất hiện trong cuộc đời của t. 
+Ngay từ những ngày đầu gặp nhau th, t đã để ý m r. Lúc đấy m chưa glow up như bây giờ, nhưng chắc m lúc đấy trông ngố ngố cute đúng gu t thì phải =)). 
+Nhưng mà cũng rất sớm thôi, t cũng biết được là m đã dành tình cảm cho người ấy, vậy nên cuối cùng t lại chọn yêu Plinh =)).</p>
+
+            <p>Nghe rất red flag đko, và sự thật là tất cả các mối quan hệ tiếp theo ở cấp 2 của t đều là như vậy. Nó là một vòng lặp là t quay lại thích m, r t lại tự nhủ là sẽ chẳng đi đến đâu cả, và r t lại cố gắng tìm một người mới để qtam, r mọi thứ kết thúc và t lại quay lại thích m. 
+T không biết đã bao nhiêu lần như vậy diễn ra trong suốt 4 năm cấp 2 nữa =)).</p>
+
+            <p>Có lẽ vì ngay từ đầu t đã không thật sự thích những người ấy, vậy nên mới có câu chuyện là t không thể biết được là t thích ai giữa Châu và Hương. 
+Nhưng bây giờ khi nhìn lại, thật ra t nghĩ t chẳng thật sự thích ai cả, t đang cố trốn chạy khỏi việc phải thừa nhận là t đã rất thích m thôi.</p>
+
+            <p>Có lẽ vì tệ như vậy nên c3 và cả bây giờ t mới đang phải trả giá =)).</p>
+
+            <p>Nhưng biết làm sao được, vì tất nhiên là t chẳng bao giờ có cơ hội yêu m đâu.</p>
+
+            <p>Cách biệt về bề ngoài là một chuyện, nhưng điều quan trọng là có lẽ tình cảm mà m dành cho người con trai ấy có lẽ cũng chẳng thua kém gì tình cảm t dành cho m, thậm chí là nhiều hơn rất nhiều bởi m luôn cảm nhận rõ được tình cảm của m.</p>
+
+            <p>Và tất nhiên người mà m yêu cũng lại là một người quá xuất sắc, dù cho có thể hơi vụng về trong tình yêu. 
+Nhưng mà thật sự ấy, t tin là Hiếu thật sự có tình cảm cho m. Vì có một lần Hiếu nói với t là nếu yêu một ai đó thì phải khiến người ấy cảm thấy đặc biệt và là của riêng mình, vậy nên có giai đoạn nó luôn mặc hoodie của m ấy ^^ (khá cute nhưng tiếc là a zai ít khi khiến m cảm thấy như vậy thì phải).</p>
+
+            <p>Thế nên đấy là lí do t chưa bao giờ chủ động tỏ bày với m, dù có lẽ là tất cả mọi người đều biết t thích m ấy =)). Không phải là tự ti hay hèn nhát gì cả, chỉ là t cảm thấy việc bị một người thua kém quá nhiều theo đuổi chẳng khác nào hạ thấp giá trị của một người con gái. Và t cũng hiểu là trong lòng m vẫn luôn chỉ có một người duy nhất</p>
+
+            <p>Thế nên t đã làm bạn với m suốt 4 năm cấp 2, và may mắn thế nào chta lại chơi thân với nhau ^^. Và t đã nghĩ như thế là ổn thôi, và lúc ấy đã có lúc t nghĩ là t không còn tình cảm yêu đương gì với m nữa cả.</p>
+
+            <p>Nhưng đến ngày cuối cùng của cấp 2 - hnhu là prom à, thì t nhận ra là không phải. Lúc m đi king and queen với cu Hoàng, không hiểu t lại cảm thấy rất rất buồn - có lẽ là chưa bao giờ t buồn như thế =)). Không phải là ghen tuông gì đâu, chỉ là tự nhiên t nhận ra, vậy là thời gian t được ở gần m đã kết thúc r, và rất có thể từ giờ về sau t sẽ không còn cơ hội được như thế nữa. Cảm giác như mình đã đánh mất một điều gì quý giá và không thể tìm lại nữa.</p>
+
+            <p>Sau đó thì t đã bỏ chạy ra ngoài thì phải =)). Nhưng lúc ấy t đã thật sự hối tiếc vì chưa một lần thật sự tỏ bày tất cả với m, kể cả m có từ chối t cx đc, nhưng ít nhất t cũng sẽ không phải hối tiếc như lúc ấy. T đã nghĩ nếu không nói ra thì mth sẽ tốt hơn, rằng ít nhất t vẫn có thể là bạn thân của m, nhưng r hóa ra không phải.</p>
+
+            <p>Thế nên sau hôm ấy, t đã quyết định sẽ không thích m nữa. Và những gì diễn ra trong mùa hè năm ấy lại càng giúp t quên đi m nhanh hơn. Xin lỗi vì t đã bỏ mặc m trong khoảng thời gian cũng rất khó khăn ấy của m, nhưng mà mong là m hiểu cho t =)). Và đấy là kết thúc của câu chuyện tình yêu r. Thật sự cho đến h điều t hối tiếc nhất là t chỉ đúng 1 lần nói là t thích m khi bị m hỏi, còn t thật sự chưa bao giờ bày tỏ tcam cả.
+Tuy vậy, có lẽ đó lại là 1 điều đúng, vì suy cho cùng có lẽ t và m chỉ nên là bạn, nếu như có vượt xa hơn thì có lẽ giờ t và m sẽ không thể được như bây giờ.</p>
+
+            <p>Đúng như t đã dự đoán, từ ngày ấy tới bây giờ t mới chỉ gặp lại m thêm đúng 1 lần cho tới lúc m chuẩn bị đi. Có những lúc t đã nghĩ là m đã quên t r =)) (và nếu thế thật thì t cx hiểu th). Nhưng một cách nào đấy, m vẫn lại tiếp tục xuất hiện trong cuộc sống của t.</p>
+
+            <p>Và chẳng biết vì sao nữa, mà t vẫn tiếp tục làm bạn với m, dù có những lúc có vẻ là m đã quên mất t r =)) và t cũng hiểu là bây giờ t và m cũng không còn ở chung một thế giới như xưa nưa để mà vẫn có thể nói chuyện với nhau.</p>
+
+            <p>Vậy mà những lúc t cảm thấy khó khăn và bế tắc nhất thì thế nào m lại luôn xuất hiện, và r h m vẫn là người duy nhất biết được gần hết tất cả mọi thứ về t =)). Thế nên thi thoảng t lại nhớ về những kỉ niệm xưa với m.</p>
+
+            <p>T hay nghĩ lại về những gì đã xảy ra trong quá khứ, và hầu hết mọi thứ đều khiến t cảm thấy hối tiếc và khá buồn, nhưng mỗi khi nghĩ lại về quãng thời gian t đã có với m, t lại thấy khá là vui đấy =)) cảm giác khá bâng khuâng dễ chịu.
+Và m cũng là người duy nhất t chưa từng tiếc nuối vì đã dành tình cảm, dù rằng có vẻ m cũng là người duy nhất mà t không tỏ bày =)).</p>
+
+            <p>Nhưng tất nhiên, hiện tại thì như đã nói, t không còn vương vấn gì cả đâu, và t thật sự muốn làm bạn với m nhé ^^.</p>
+
+            <p>Đấy là những gì mà t muốn nói, nch cũng khá là run khi viết những lời này. Mong rằng những gì t nói sẽ không ảnh hưởng đến việc t làm bạn với m, vì như đã nói hiện tại t thật sự muốn làm bạn tiếp với m, vì tìm được một người thấu hiểu t đến như vậy khá khó =))</p>
+
+            <p>Vậy thôi, khá là dài dòng cho việc bày tỏ cảm xúc khi mọi thứ đã qua hết r nhỉ.</p>
+
+            <p>Còn về việc m sắp vào Nam học, và sau đấy có thể m sẽ không quay lại HN sống nữa thì phải (hnhu trc m có bảo là sau này m sẽ kéo bố mẹ m vào Nha Trang)</p>
+
+            <p>Nói sao nhỉ, đầu tiên là chúc mừng m đã bước vào một hành trình mới, một thành phố mới. T khá thắc mắc cảm giác cuộc đời mình chuẩn bị thay đổi gần như toàn bộ là như thế nào nhỉ ? =))
+Dù có vẻ ước mơ m là đi du học cơ, và việc m vào Nam có nghĩa là t lại càng ít cơ hội gặp nhau hơn, nhưng t nghĩ mọi sự thay đổi đều sẽ mang lại những điều mới mẻ và tích cực cho mình, và mong rằng m cũng nghĩ như vậy.</p>
+
+            <p>Nhưng việc bước vào một cuộc sống mới chắc chắn sẽ có những khó khăn khi hnhu là m phải sống xa gia đình, cũng như là thích nghi và làm quen với một môi trường và những con người xa lạ.</p>
+
+            <p>Có thể m sẽ thấy choáng ngợp, mông lung, cảm thấy không thuộc về nơi này, hoặc chỉ có thể là có những lúc buồn bực, tủi thân nhưng mà chẳng nói ra được với ai, cảm thấy xa lạ và nhớ mọi người.</p>
+
+            <p>Nhưng như t đã nói r, mọi khó khăn r cũng sẽ qua đi thôi, mong rằng m vẫn sẽ luôn mạnh mẽ để vượt qua.</p>
+
+            <p>Còn bây giờ, Mai Phương của hiện tại đã trưởng thành và khác biệt hơn rất nhiều so với Mai Phương của 7 năm trước mà t biết. Vậy nên t tin rằng m sẽ biết được bản thân m muốn được điều gì, và t chúc m có được những điều ấy.</p>
+
+            <p>T nghĩ tuổi trẻ ngắn hạn lắm, nên hãy sống hết mình vì những gì m muốn. Tự tin hơn, mở lòng hơn, mở rộng và phát triển bản thân cũng như thế giới xung quanh m (điều mà m đã làm rất tốt r). Cũng như là tìm được ước mơ và hoàn thành nó nhé, vì chẳng có gì hạnh phúc hơn là được sống và làm trong ước mơ của mình. Đừng đánh mất bản thân nhé ^^ hãy nhớ rằng mình là ai và mình đang có những gì trong tay, t tin là m đủ bản lĩnh để làm chủ mọi thứ.</p>
+
+            <p>Và nếu được thì chúc m sớm tìm được 1 anh ny đúng gu, hoặc 1 em hồng hài nhi chẳng hạn ^^ nch là tình yêu có thể làm cho con người đau khổ nhưng cũng chỉ có tình yêu mới khiến con ngta trở nên hạnh phúc. T nghĩ tình yêu chỉ thật sự bền vững khi thật sự đấu tranh vì nó, nên hãy dứt khoát và rõ ràng hơn hơn trong việc quyết định mọi thứ. T tin là người như m sẽ sớm có được hạnh phúc thật sự thôi.</p>
+
+            <p>Chắc chắn t sẽ theo dõi, ủng hộ m, và t sẽ luôn lắng nghe m khi cần.</p>
+
+            <div class="footer-section">
+                <p>Thật sự ấy, t đã từng yêu cậu rất nhiều ^^<br>
+Cảm ơn cậu vì đã xuất hiện trong cuộc đời t, thay đổi và khiến nó trở nên bớt u ám.<br>
+Cảm ơn cậu vì đã là một phần thanh xuân không thể quên trong cuộc đời của t.<br>
+Cảm ơn cậu vì tất cả mọi thứ,</p>
+
+                <p>Thật lòng mong những ngày sau này của Lê Trần Mai Phương sẽ luôn ngập tràn niềm vui, hạnh phúc. ^^</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script tạo hiệu ứng cánh hoa anh đào -->
+    <script>
+        const container = document.getElementById('sakuraContainer');
+        const petalCount = 30;
+
+        for (let i = 0; i < petalCount; i++) {
+            const petal = document.createElement('div');
+            petal.className = 'petal';
+
+            // Kích thước ngẫu nhiên cho từng cánh hoa
+            const size = Math.random() * 8 + 8;
+            petal.style.width = `${size}px`;
+            petal.style.height = `${size * 1.4}px`;
+
+            // Vị trí ngang xuất phát ngẫu nhiên
+            petal.style.left = `${Math.random() * 100}%`;
+
+            // Thời gian rơi và lắc ngẫu nhiên
+            const fallDuration = Math.random() * 6 + 6;
+            const swayDuration = Math.random() * 3 + 3;
+            petal.style.animationDuration = `${fallDuration}s, ${swayDuration}s`;
+
+            // Độ trễ bắt đầu
+            petal.style.animationDelay = `${Math.random() * 5}s, ${Math.random() * 2}s`;
+
+            container.appendChild(petal);
+        }
+    </script>
+</body>
+</html>
