@@ -40,7 +40,7 @@
             position: absolute;
             background: #ffb7c5;
             border-radius: 150% 0 150% 0;
-            opacity: 0.7;
+            opacity: 0.6;
             pointer-events: none;
             animation: fall linear infinite, sway ease-in-out infinite;
         }
@@ -96,6 +96,38 @@
             margin-top: 30px;
             padding-top: 20px;
             border-top: 1px solid #334155;
+        }
+
+        /* Music Playlist Button Section */
+        .music-box {
+            margin-top: 35px;
+            padding: 20px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .music-box p {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-bottom: 12px;
+        }
+
+        .music-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: #0f172a;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .music-link:hover {
+            background: #0ea5e9;
+            transform: translateY(-2px);
         }
 
         @media (max-width: 600px) {
@@ -160,7 +192,7 @@ Nhưng mà thật sự ấy, t tin là Hiếu thật sự có tình cảm cho m.
             <p>Thế nên sau hôm ấy, t đã quyết định sẽ không thích m nữa. Và những gì diễn ra trong mùa hè năm ấy lại càng giúp t quên đi m nhanh hơn. Xin lỗi vì t đã bỏ mặc m trong khoảng thời gian cũng rất khó khăn ấy của m, nhưng mà mong là m hiểu cho t =)). Và đấy là kết thúc của câu chuyện tình yêu r. Thật sự cho đến h điều t hối tiếc nhất là t chỉ đúng 1 lần nói là t thích m khi bị m hỏi, còn t thật sự chưa bao giờ bày tỏ tcam cả.
 Tuy vậy, có lẽ đó lại là 1 điều đúng, vì suy cho cùng có lẽ t và m chỉ nên là bạn, nếu như có vượt xa hơn thì có lẽ giờ t và m sẽ không thể được như bây giờ.</p>
 
-            <p>Đúng như t đã dự đoán, từ ngày ấy tới bây giờ t mới chỉ gặp lại m thêm đúng 1 lần cho tới lúc m chuẩn bị đi. Có những lúc t đã nghĩ là m đã quên t r =)) (và nếu thế thật thì t cx hiểu th). Nhưng một cách nào đấy, m vẫn lại tiếp tục xuất hiện trong cuộc sống của t.</p>
+            <p>Đúng như t đã dự đoán, từ ngày ấy tới bây giờ t mới chỉ gặp lại m thêm đúng 1 lần cho tới lúc m chuẩn bị đi. Nhưng một cách nào đấy, m vẫn lại tiếp tục xuất hiện trong cuộc sống của t.</p>
 
             <p>Và chẳng biết vì sao nữa, mà t vẫn tiếp tục làm bạn với m, dù có những lúc có vẻ là m đã quên mất t r =)) và t cũng hiểu là bây giờ t và m cũng không còn ở chung một thế giới như xưa nưa để mà vẫn có thể nói chuyện với nhau.</p>
 
@@ -202,10 +234,15 @@ Cảm ơn cậu vì tất cả mọi thứ,</p>
 
                 <p>Thật lòng mong những ngày sau này của Lê Trần Mai Phương sẽ luôn ngập tràn niềm vui, hạnh phúc. ^^</p>
             </div>
+
+            <!-- Playlist Nhạc -->
+            <div class="music-box">
+                <p>🎵 Ghé qua nghe chút nhạc nhé:</p>
+                <a href="https://quacngulonlon.github.io/nhac/" target="_blank" class="music-link">Mở Playlist Nhạc 🎧</a>
+            </div>
         </div>
     </div>
 
-    <!-- Script tạo hiệu ứng cánh hoa anh đào -->
     <script>
         const container = document.getElementById('sakuraContainer');
         const petalCount = 30;
@@ -214,20 +251,16 @@ Cảm ơn cậu vì tất cả mọi thứ,</p>
             const petal = document.createElement('div');
             petal.className = 'petal';
 
-            // Kích thước ngẫu nhiên cho từng cánh hoa
             const size = Math.random() * 8 + 8;
             petal.style.width = `${size}px`;
             petal.style.height = `${size * 1.4}px`;
 
-            // Vị trí ngang xuất phát ngẫu nhiên
             petal.style.left = `${Math.random() * 100}%`;
 
-            // Thời gian rơi và lắc ngẫu nhiên
             const fallDuration = Math.random() * 6 + 6;
             const swayDuration = Math.random() * 3 + 3;
             petal.style.animationDuration = `${fallDuration}s, ${swayDuration}s`;
 
-            // Độ trễ bắt đầu
             petal.style.animationDelay = `${Math.random() * 5}s, ${Math.random() * 2}s`;
 
             container.appendChild(petal);
